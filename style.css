@@ -1,0 +1,143 @@
+:root {
+    --theme-color: #31b18d;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* layout */
+header {
+    width: 85%;
+    margin: 0px auto
+}
+
+header .navigate {
+    margin-bottom: 30px;
+}
+
+/* logo */
+
+.logo {
+    display: inline-block;
+}
+
+header .logo img {
+    width: 166px;
+    border-radius: 10px;
+}
+
+/* navigate */
+
+.nav {
+    float: right;
+
+}
+
+.nav ul li {
+    display: flex;
+    float: left;
+}
+
+.nav ul li a {
+    color: black;
+    margin: 17px;
+    transition: 0.3s;
+    font-weight: 10;
+
+}
+
+.nav ul li a:hover {
+    color: var(--theme-color);
+}
+
+.nav ul li:first-child a {
+    color: var(--theme-color);
+}
+
+/* info */
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.basic-info {
+    width: 44%;
+    min-width: 400px;
+}
+
+
+.basic-info h6 {
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    color: #758499;
+    font-size: 100%;
+}
+
+.basic-info h6:after{
+    content: "";
+    height: 1px;
+    width: 3rem;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: #758499;
+}
+
+.basic-info h1 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.4em;
+    /* margin-bottom: 45px; */
+    font-size: 4.8823529411765rem;
+}
+
+.basic-info h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 65px;
+    font-size: 2.0588235294118rem;
+    color: #758499;
+}
+
+.img-avata {
+    width: 50%;
+    min-width: 280px;
+}
+
+.img-avata img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.basic-info .config ul li span{
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: var(--theme-color);
+    border-radius: 3px;
+    padding: 2px;
+    color: white;
+    font-size: large;
+}
+
+.basic-info .config ul li {
+    font-size: 15px;
+    margin-bottom: 3px;
+}

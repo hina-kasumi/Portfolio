@@ -19,6 +19,7 @@ a {
 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #dffbf3;
 }
 
 /* layout */
@@ -93,7 +94,7 @@ header .logo img {
     font-size: 100%;
 }
 
-.basic-info h6:after{
+.basic-info h6:after {
     content: "";
     height: 1px;
     width: 3rem;
@@ -127,7 +128,7 @@ header .logo img {
     border-radius: 50%;
 }
 
-.basic-info .config ul li span{
+.basic-info .config ul li span {
     vertical-align: middle;
     margin-right: 10px;
     background-color: var(--theme-color);
@@ -140,4 +141,54 @@ header .logo img {
 .basic-info .config ul li {
     font-size: 15px;
     margin-bottom: 3px;
+}
+
+
+/* about me */
+
+.about-me-container {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.about-me-container h6 {
+    color: var(--theme-color);
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.about-me-container h2 {
+    font-size: 2.8em;
+    line-height: 1.3;
+    margin-bottom: 125px;
+}
+
+.about-me-container .more-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-me-container .more-info .inner-info-left {
+    display: inline-block;
+    min-width: 300px;
+    width: 43%;
+}
+
+.about-me-container .more-info .inner-info-right {
+    display: inline-block;
+    min-width: 300px;
+    width: 43%;
+}
+
+.about-me-container .more-info .inner-info-right span a{
+    color: var(--theme-color);
+    transition: 0.3s;
+    padding: 3px;
+}
+
+.about-me-container .more-info .inner-info-right span a:hover{
+    color: #196952;
+    background-color: #91f8f1;
+    border-radius: 3px;
 }

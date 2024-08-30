@@ -30,13 +30,12 @@ header {
 
 header .navigate {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* logo */
-
-.logo {
-    display: inline-block;
-}
 
 header .logo img {
     width: 166px;
@@ -44,11 +43,6 @@ header .logo img {
 }
 
 /* navigate */
-
-.nav {
-    float: right;
-
-}
 
 .nav ul li {
     display: flex;
@@ -75,14 +69,13 @@ header .logo img {
 
 .container {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
 }
 
 .basic-info {
-    width: 44%;
-    min-width: 400px;
+    flex: 1;
+    /* min-width: 400px; */
+    margin: auto auto;
 }
 
 
@@ -107,7 +100,6 @@ header .logo img {
 .basic-info h1 {
     font-family: 'Playfair Display', serif;
     line-height: 1.4em;
-    /* margin-bottom: 45px; */
     font-size: 4.8823529411765rem;
 }
 
@@ -116,16 +108,6 @@ header .logo img {
     margin-bottom: 65px;
     font-size: 2.0588235294118rem;
     color: #758499;
-}
-
-.img-avata {
-    width: 50%;
-    min-width: 280px;
-}
-
-.img-avata img {
-    width: 100%;
-    border-radius: 50%;
 }
 
 .basic-info .config ul li span {
@@ -143,6 +125,16 @@ header .logo img {
     margin-bottom: 3px;
 }
 
+.img-avata {
+    flex: 1;
+    min-width: 300px;
+    margin: auto auto;
+}
+
+.img-avata img {
+    width: 100%;
+    border-radius: 50%;
+}
 
 /* about me */
 
@@ -161,6 +153,7 @@ header .logo img {
     font-size: 2.8em;
     line-height: 1.3;
     margin-bottom: 125px;
+    text-align: center;
 }
 
 .about-me-container .more-info {

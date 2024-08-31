@@ -1,5 +1,6 @@
 :root {
     --theme-color: #31b18d;
+    --font-gray: #758499;
 }
 
 * {
@@ -74,7 +75,6 @@ header .logo img {
 
 .basic-info {
     flex: 1;
-    /* min-width: 400px; */
     margin: auto auto;
 }
 
@@ -83,7 +83,7 @@ header .logo img {
     position: relative;
     margin-bottom: 5rem;
     margin-top: 5rem;
-    color: #758499;
+    color: var(--font-gray);
     font-size: 100%;
 }
 
@@ -94,7 +94,7 @@ header .logo img {
     position: absolute;
     left: 0;
     top: 30px;
-    background-color: #758499;
+    background-color: var(--font-gray);
 }
 
 .basic-info h1 {
@@ -107,7 +107,7 @@ header .logo img {
     font-family: 'Playfair Display', serif;
     margin-bottom: 65px;
     font-size: 2.0588235294118rem;
-    color: #758499;
+    color: var(--font-gray);
 }
 
 .basic-info .config ul li span {
@@ -180,17 +180,102 @@ header .logo img {
 }
 
 .about-me-container .more-info .inner-info-right .experience {
-    color: #758499;
+    color: var(--font-gray);
 }
 
-.about-me-container .more-info .inner-info-right span a{
+.about-me-container .more-info .inner-info-right span a {
     color: var(--theme-color);
     transition: 0.3s;
     padding: 3px;
 }
 
-.about-me-container .more-info .inner-info-right span a:hover{
+.about-me-container .more-info .inner-info-right span a:hover {
     color: #196952;
     background-color: #91f8f1;
     border-radius: 3px;
+}
+
+/* what i do */
+
+.what-i-do {
+    margin-bottom: 20px;
+}
+
+.what-i-do-container {
+    margin: 30px auto;
+    width: 90%;
+}
+
+.what-i-do-container h2 {
+    font-size: 50px;
+}
+
+.what-i-do-container .e-con-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.what-i-do-container .e-con-inner p {
+    color: var(--font-gray);
+    min-width: 300px;
+    flex: 2;
+}
+
+.what-i-do-container .e-con-inner a {
+    flex: 1;
+    min-width: 200px;
+}
+
+.what-i-do-container .e-con-inner a span {
+    float: right;
+    color: var(--theme-color);
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.what-i-do-container .e-con-inner a span:hover {
+    font-size: 60px;
+}
+
+/* jobs */
+
+.jobs-list .jobs span {
+    color: var(--theme-color);
+}
+
+.jobs-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.jobs-list .jobs {
+    flex: 1;
+    max-width: 350px;
+    margin: 10px 10px 20px;
+    /* border-right: 1px solid var(--font-gray); */
+}
+
+.jobs:last-child {
+    border: 0px;
+}
+
+@media (max-width: 800px){
+    .jobs-list {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+.jobs span, .jobs h4 {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.jobs p {
+    color: var(--font-gray);
 }

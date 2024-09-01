@@ -279,3 +279,31 @@ header .logo img {
 .jobs p {
     color: var(--font-gray);
 }
+
+/* my experience */
+
+.skill{
+    color: var(--font-gray);
+    font-size: 25px;
+    min-width: 300px;
+    width: 50%;
+    margin: auto auto;
+}
+
+.skill .chart {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.skill .chart .figure {
+    background-color: var(--theme-color);
+    width: var(--percent);
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px 0px 0px 10px;
+    text-align: right;
+    color: white;
+    font-size: 0.7rem;
+    cursor: context-menu;
+}
